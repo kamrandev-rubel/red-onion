@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import FoodGellary from '../FoodGellary/FoodGellary';
 
 const FoodFilter = () => {
     const [allFoods, setAllFoods] = useState([]);
@@ -20,7 +21,7 @@ const FoodFilter = () => {
         const lunchFood = allFoods.filter(food => food.category === 'lunch')
         setFilterFoods(lunchFood);
     }
-    
+
     return (
         <div>
             <div className='flex justify-center items-center my-[95px]'>
@@ -28,17 +29,9 @@ const FoodFilter = () => {
                 <button onClick={handleDinnerFilter} className='mr-16 text-xl font-[550] hover:text-red-500 hover:border-b-4 hover:border-red-500' >Lunch</button>
                 <button onClick={handleLunchFilter} className='mr-16 text-xl font-[550] hover:text-red-500 hover:border-b-4 hover:border-red-500' >Dinner</button>
             </div>
-            <div>
-                <h2>food items Lorem ipsum dolor sit amet.</h2>
+            <div className='w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto  '>
                 {
-                    folterFoods.map(food => {
-                        const { id, picture, name, description } = food;
-                        return (
-                            <div key={food.id}>
-                                <img src={picture} alt="" className='w-10' />
-                            </div>
-                        )
-                    })
+                    folterFoods.map(food => <FoodGellary key={food.id} food={food} />)
                 }
             </div>
         </div>

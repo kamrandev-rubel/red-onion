@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Breakfast from '../Breakfast/Breakfast';
+import Breakfast from '../FoodGellary/FoodGellary';
 import FoodFilter from '../FoodFilter/FoodFilter';
 
 const Home = () => {
