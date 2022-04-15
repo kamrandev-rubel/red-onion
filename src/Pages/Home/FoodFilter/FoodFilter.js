@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import useFoodData from '../../../Hooks/useFoodData';
 import FoodGellary from '../FoodGellary/FoodGellary';
 
 const FoodFilter = () => {
-    const [allFoods, setAllFoods] = useState([]);
-    const [folterFoods, setFilterFoods] = useState([]);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setAllFoods(data))
-    }, [])
+    const [allFoods, setAllFoods] =useFoodData()
+    const [filterFoods, setFilterFoods] = useState([]);
+    
     const handleBreakfastFilter = () => {
         const breakfastFood = allFoods.filter(food => food.category === 'breakfast')
         setFilterFoods(breakfastFood);
@@ -31,8 +28,11 @@ const FoodFilter = () => {
             </div>
             <div className='w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto  '>
                 {
-                    folterFoods.map(food => <FoodGellary key={food.id} food={food} />)
+                    filterFoods.map(food => <FoodGellary key={food.id} food={food} />)
                 }
+            </div>
+            <div>
+                <button className='bg-gray-400 text-white text-2xl px-10 py-3 my-[77px] rounded-lg block mx-auto hover:bg-red-500'>Checkout Your Food</button>
             </div>
         </div>
     );
