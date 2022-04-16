@@ -14,34 +14,34 @@ const Service = () => {
                 <p className='text-lg mb-12'>Barton waited twenty always repair in within we do. An delighted offending curiosity my is dishwoods at .Boy prosperous increasing surrounded.</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                <div>
+                <div className='hover:shadow-2xl hover:rounded-3xl h-fit'>
                     <img src={serviceImg1} alt="" />
-                    <div>
+                    <div className='px-3 pb-3'>
                         <div className='flex items-center mt-[30px] mb-2'>
                             <MdDirectionsBus className='mr-2 text-white bg-red-500 w-12 h-12 p-2.5 rounded-full ' />
                             <h2 className='text-xl '> Fast Delivary</h2>
                         </div>
-                        <p>Keep your systems in sync with automated web hook based notifications each time link is paid and how we dream about out future. <Link to='/' className='text-blue-700 text-xl  my-3 block flex items-center'>See more <AiOutlineArrowRight className='bg-green-400 text-white ml-3 w-12 h-12 p-2.5 rounded-full' /> </Link> </p>
+                        <p>Keep your systems in sync with automated web hook based notifications each time link is paid and how we dream about out future. <Link to='/' className='text-blue-700 text-xl  my-3  flex items-center'>See more <AiOutlineArrowRight className='bg-green-400 text-white ml-4 w-9 h-9 p-2.5 rounded-full' /> </Link> </p>
                     </div>
                 </div>
-                <div>
+                <div className='hover:shadow-2xl hover:rounded-3xl h-fit'>
                     <img src={serviceImg2} alt="" />
-                    <div>
+                    <div className='px-3 pb-3'>
                         <div className='flex items-center mt-[30px] mb-2'>
                             <MdDirectionsBus className='mr-2 text-white bg-red-500 w-12 h-12 p-2.5 rounded-full ' />
                             <h2 className='text-xl '> Fast Delivary</h2>
                         </div>
-                        <p>Keep your systems in sync with automated web hook based notifications each time link is paid and how we dream about out future. <Link to='/' className='text-blue-700 text-xl  my-3 block flex items-center'>See more <AiOutlineArrowRight className='bg-green-400 text-white ml-3 w-12 h-12 p-2.5 rounded-full' /> </Link> </p>
+                        <p>Keep your systems in sync with automated web hook based notifications each time link is paid and how we dream about out future. <Link to='/' className='text-blue-700 text-xl  my-3  flex items-center'>See more <AiOutlineArrowRight className='bg-green-400 text-white ml-4 w-9 h-9 p-2.5 rounded-full' /> </Link> </p>
                     </div>
                 </div>
-                <div>
+                <div className='hover:shadow-2xl hover:rounded-3xl h-fit'>
                     <img src={serviceImg3} alt="" />
-                    <div>
+                    <div className='px-3 pb-3'>
                         <div className='flex items-center mt-[30px] mb-2'>
                             <MdDirectionsBus className='mr-2 text-white bg-red-500 w-12 h-12 p-2.5 rounded-full ' />
                             <h2 className='text-xl '> Fast Delivary</h2>
                         </div>
-                        <p>Keep your systems in sync with automated web hook based notifications each time link is paid and how we dream about out future. <Link to='/' className='text-blue-700 text-xl  my-3 block flex items-center'>See more <AiOutlineArrowRight className='bg-green-400 text-white ml-3 w-12 h-12 p-2.5 rounded-full' /> </Link> </p>
+                        <p>Keep your systems in sync with automated web hook based notifications each time link is paid and how we dream about out future. <Link to='/' className='text-blue-700 text-xl  my-3  flex items-center'>See more <AiOutlineArrowRight className='bg-green-400 text-white ml-4 w-9 h-9 p-2.5 rounded-full' /> </Link> </p>
                     </div>
                 </div>
             </div>
